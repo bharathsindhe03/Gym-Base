@@ -1,59 +1,139 @@
+/* General Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Trainer Container */
 .trainerContainer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards; /* Fade-in effect */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+/* Trainer Wrapper */
+.trainerWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out 0.5s forwards; /* Fade-in effect */
+}
+
+/* Trainer Card */
+.trainerCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+  opacity: 0;
+  animation: fadeIn 1s ease-out 1s forwards; /* Fade-in effect */
+}
+
+.trainerCard:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.trainerImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.trainerName {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.trainerType {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 2rem; /* Adjusted title size for smaller screens */
   }
-  
+
   .subtitle {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #555;
+    font-size: 1.5rem; /* Adjusted subtitle size */
   }
-  
+
   .description {
-    font-size: 1rem;
-    margin-bottom: 40px;
-    color: #777;
+    font-size: 0.95rem; /* Slightly smaller description font */
   }
-  
+
   .trainerWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for mobile */
   }
-  
+
   .trainerCard {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    width: 250px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Increased card width on mobile */
+    max-width: 350px; /* Max width for larger screens */
   }
-  
-  .trainerImage {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Reduced title size for very small screens */
   }
-  
+
+  .subtitle {
+    font-size: 1.3rem; /* Adjusted subtitle size */
+  }
+
+  .trainerCard {
+    width: 90%; /* Further adjusted card width for very small screens */
+  }
+
   .trainerName {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
+    font-size: 1rem; /* Slightly smaller font for trainer name */
   }
-  
+
   .trainerType {
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.9rem; /* Slightly smaller font for trainer type */
   }
-  
+}
