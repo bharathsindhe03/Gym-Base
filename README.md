@@ -69,6 +69,3 @@ Feel free to fork this repository and submit pull requests if you'd like to cont
 - Improve documentation
 - Add more styles or animations
 
-## License
-
-This project is licensed under the MIT License.
