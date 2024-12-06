@@ -1,0 +1,42 @@
+.classesContainer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .classesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .classCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .classImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .classDesc {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  

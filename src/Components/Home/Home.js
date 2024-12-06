@@ -1,13 +1,12 @@
 import React from "react";
 import "./Home.css"; // Importing the CSS file
-import Navbar from "../Navbar/Navbar";
 import sec1 from "../../assets/section1.png";
 import Footer from "../Footer/Footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      
       <div className="container">
         {/* Main Section */}
         <section className="mainSection">
