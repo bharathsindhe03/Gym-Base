@@ -1,0 +1,12 @@
+.container{
+    position: relative;
+    background-image: url('../../assets/image.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}

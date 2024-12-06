@@ -1,0 +1,86 @@
+/* Navbar container */
+.navbar {
+    background-color: black;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Container for the navbar contents */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  /* Logo styling */
+  .navbar-brand .logo {
+    width: 100px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Spacing to the right of the logo */
+    cursor: pointer;
+  }
+  
+  /* Navbar links */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Navbar link hover effect */
+  .navbar-link:hover {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Search bar and button */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the search button */
+  .search-button:hover {
+    background-color: darkblue;
+  }
+  
+  /* Profile Avatar */
+  .navbar-profile .profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
