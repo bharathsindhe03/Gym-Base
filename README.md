@@ -35,9 +35,40 @@
 
     ```bash
     npm install
-```
+    ```
 4. Start the development server:
 
     ```bash
     npm start
     ```
+## Folder Structure
+
+```sh
+└── Gym-Fluencer/
+    ├── README.md
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    └── src
+        ├── App.css
+        ├── App.js
+        ├── App.test.js
+        ├── Components
+        ├── assets
+        ├── index.css
+        ├── index.js
+        ├── logo.svg
+        ├── reportWebVitals.js
+        └── setupTests.js
+```
+## Contributing
+
+Feel free to fork this repository and submit pull requests if you'd like to contribute. Here are some ways you can help:
+
+- Fix bugs or improve features
+- Improve documentation
+- Add more styles or animations
+
+## License
+
+This project is licensed under the MIT License.
