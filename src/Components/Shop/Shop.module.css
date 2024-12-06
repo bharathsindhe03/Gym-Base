@@ -1,0 +1,90 @@
+.shopContainer {
+    padding: 20px;
+  }
+  
+  .shopLayout {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .filterSection {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .filterTitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .filterGroup {
+    margin-bottom: 20px;
+  }
+  
+  .filterButton {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filterButton:hover {
+    background-color: #bbb;
+  }
+  
+  .filterButton.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .priceSlider {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .shopWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 3;
+  }
+  
+  .shopCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .shopImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .shopTitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .shopDescription {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .shopPrice {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .shopType {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
