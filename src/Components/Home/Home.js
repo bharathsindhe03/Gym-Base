@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css"; // Importing the CSS file
+import "./Home.css";
 import sec1 from "../../assets/section1.png";
 import Footer from "../Footer/Footer";
 
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       
       <div className="container">
-        {/* Main Section */}
+
         <section className="mainSection">
           <h2 className="mainTitle">FUEL YOUR</h2>
           <h1>BODY FITNESS</h1>
@@ -18,7 +18,7 @@ export default function Home() {
         </section>
       </div>
 
-      {/* Services Section */}
+  
       <section className="aboutSection">
         <h2 className="aboutTitle">SERVICE WE PROVIDE</h2>
         <h3 className="aboutSubtitle">OUR SERVICES</h3>
@@ -26,9 +26,9 @@ export default function Home() {
           At Gym Base, we offer a range of specialized equipment to suit different needs. Whether you are looking for strength training or cardio, our state-of-the-art equipment is designed to help you achieve your fitness goals.
         </p>
 
-        {/* Service Items */}
+    
         <div className="serviceWrapper">
-          {/* Left Side Services */}
+         
           <div className="serviceContainer left">
             <div className="serviceItem">
               <h4>STRENGTH EQUIPMENT</h4>
@@ -52,12 +52,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Image */}
+          
           <div className="serviceImageWrapper">
             <img src={sec1} alt="section1-img" className="sec1Image" />
           </div>
 
-          {/* Right Side Services */}
+          
           <div className="serviceContainer right">
             <div className="serviceItem">
               <h4>GYM EQUIPMENT</h4>

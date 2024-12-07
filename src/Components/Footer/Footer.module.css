@@ -1,4 +1,4 @@
-/* Footer Styles */
+
 .footer {
   background-color: black;
   color: white;
@@ -16,12 +16,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  flex-wrap: wrap; /* Ensures responsive behavior */
+  flex-wrap: wrap; 
 }
 
 .footerColumn,
 .footerLogo {
-  width: 32%; /* Ensure all three sections take up 32% of the available space */
+  width: 32%; 
   margin: 10px 0;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .footerLogoImg {
-  width: 100px; /* Adjust based on your logo size */
+  width: 100px; 
   height: auto;
   margin-bottom: 10px;
 }
@@ -74,7 +74,6 @@
   font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .footerTop {
     flex-direction: column;

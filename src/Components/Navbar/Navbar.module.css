@@ -1,4 +1,4 @@
-/* Navbar container */
+
 .navbar {
   background-color: black;
   padding: 15px 30px;
@@ -9,14 +9,13 @@
   top: 0;
   z-index: 1000;
 }
-/* Active link styling */
+
 .active {
   background-color: blue;
   color: white;
   font-weight: bold;
 }
 
-/* Container for the navbar contents */
 .navbarContainer {
   display: flex;
   justify-content: space-between;
@@ -24,15 +23,15 @@
   align-items: center;
 }
 
-/* Logo styling */
+
 .navbarBrand .logo {
-  width: 100px; /* Set logo width */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Spacing to the right of the logo */
+  width: 100px; 
+  height: auto; 
+  margin-right: 20px;
   cursor: pointer;
 }
 
-/* Navbar links */
+
 .navbarLinks {
   display: flex;
   gap: 20px;
@@ -47,13 +46,11 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Navbar link hover effect */
 .navbarLink:hover {
   background-color: blue;
   color: white;
 }
 
-/* Search bar and button */
 .navbarSearch {
   display: flex;
   align-items: center;
@@ -76,12 +73,10 @@
   transition: background-color 0.3s ease;
 }
 
-/* Hover effect for the search button */
 .searchButton:hover {
   background-color: darkblue;
 }
 
-/* Profile Avatar */
 .navbarProfile .profileAvatar {
   width: 40px;
   height: 40px;

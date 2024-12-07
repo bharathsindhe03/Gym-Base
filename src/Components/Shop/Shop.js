@@ -51,20 +51,20 @@ export default function Shop() {
     },
   ];
 
-  const [filterType, setFilterType] = useState("All"); // State to filter by type
-  const [maxPrice, setMaxPrice] = useState(5000); // State to filter by price
+  const [filterType, setFilterType] = useState("All"); 
+  const [maxPrice, setMaxPrice] = useState(5000);
 
-  // Handle filter by type
+
   const handleFilterTypeChange = (type) => {
     setFilterType(type);
   };
 
-  // Handle price slider change
+
   const handlePriceChange = (event) => {
     setMaxPrice(event.target.value);
   };
 
-  // Filtered items based on type and price
+
   const filteredCategories = categories.filter(
     (item) =>
       (filterType === "All" || item.type === filterType) &&
@@ -76,10 +76,10 @@ export default function Shop() {
       <div className={styles.shopContainer}>
         <h1 className={styles.title}>Shop Our Collection</h1>
         <div className={styles.shopLayout}>
-          {/* Filters Section */}
+         
           <div className={styles.filterSection}>
             <h2 className={styles.filterTitle}>Filters</h2>
-            {/* Category Filter */}
+            
             <div className={styles.filterGroup}>
               <h3>Category</h3>
               <button
@@ -108,7 +108,7 @@ export default function Shop() {
               </button>
             </div>
 
-            {/* Price Filter */}
+        
             <div className={styles.filterGroup}>
               <h3>Price</h3>
               <label htmlFor="priceRange">Max Price: ₹{maxPrice}</label>
@@ -125,7 +125,7 @@ export default function Shop() {
             </div>
           </div>
 
-          {/* Shop Items Section */}
+          
           <div className={styles.shopWrapper}>
             {filteredCategories.map((item) => (
               <div key={item.id} className={styles.shopCard}>

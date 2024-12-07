@@ -17,13 +17,12 @@
   }
 }
 
-/* Trainer Container */
 .trainerContainer {
   text-align: center;
   padding: 20px;
   background-color: #f9f9f9;
   opacity: 0;
-  animation: fadeIn 1s ease-out forwards; /* Fade-in effect */
+  animation: fadeIn 1s ease-out forwards; 
 }
 
 .title {
@@ -44,17 +43,17 @@
   color: #777;
 }
 
-/* Trainer Wrapper */
+
 .trainerWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   opacity: 0;
-  animation: fadeIn 1s ease-out 0.5s forwards; /* Fade-in effect */
+  animation: fadeIn 1s ease-out 0.5s forwards; 
 }
 
-/* Trainer Card */
+
 .trainerCard {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -63,14 +62,14 @@
   background-color: #fff;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
   opacity: 0;
-  animation: fadeIn 1s ease-out 1s forwards; /* Fade-in effect */
+  animation: fadeIn 1s ease-out 1s forwards; 
 }
 
 .trainerCard:hover {
-  transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .trainerImage {
@@ -91,49 +90,49 @@
   color: #555;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .title {
-    font-size: 2rem; /* Adjusted title size for smaller screens */
+    font-size: 2rem; 
   }
 
   .subtitle {
-    font-size: 1.5rem; /* Adjusted subtitle size */
+    font-size: 1.5rem; 
   }
 
   .description {
-    font-size: 0.95rem; /* Slightly smaller description font */
+    font-size: 0.95rem; 
   }
 
   .trainerWrapper {
     flex-direction: column;
-    gap: 15px; /* Reduced gap for mobile */
+    gap: 15px; 
   }
 
   .trainerCard {
-    width: 80%; /* Increased card width on mobile */
-    max-width: 350px; /* Max width for larger screens */
+    width: 80%;
+    max-width: 350px;
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.5rem; /* Reduced title size for very small screens */
+    font-size: 1.5rem;
   }
 
   .subtitle {
-    font-size: 1.3rem; /* Adjusted subtitle size */
+    font-size: 1.3rem;
   }
 
   .trainerCard {
-    width: 90%; /* Further adjusted card width for very small screens */
+    width: 90%; 
   }
 
   .trainerName {
-    font-size: 1rem; /* Slightly smaller font for trainer name */
+    font-size: 1rem; 
   }
 
   .trainerType {
-    font-size: 0.9rem; /* Slightly smaller font for trainer type */
+    font-size: 0.9rem; 
   }
 }

@@ -62,10 +62,10 @@
   margin-top: 10px;
 }
 
-/* Responsive Styling */
+
 @media (max-width: 768px) {
   .blobList {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
 
   .blobItem {
@@ -73,44 +73,44 @@
   }
 
   .blobImage {
-    height: 150px; /* Adjust image height for smaller screens */
+    height: 150px; 
   }
 
   .blobDetails h3 {
-    font-size: 1rem; /* Adjust title size */
+    font-size: 1rem; 
   }
 
   .blobDetails p {
-    font-size: 0.85rem; /* Adjust description text size */
+    font-size: 0.85rem; 
   }
 
   .blobDate {
-    font-size: 0.8rem; /* Adjust date text size */
+    font-size: 0.8rem; 
   }
 }
 
 @media (max-width: 480px) {
   .blobList {
-    grid-template-columns: 1fr; /* Single column for very small screens */
+    grid-template-columns: 1fr; 
   }
 
   .blobItem {
-    margin: 0 10px; /* Reduce margins for mobile */
+    margin: 0 10px;
   }
 
   .blobImage {
-    height: 120px; /* Adjust image height for small screens */
+    height: 120px;
   }
 
   .blobDetails h3 {
-    font-size: 0.9rem; /* Adjust title size further for small screens */
+    font-size: 0.9rem; 
   }
 
   .blobDetails p {
-    font-size: 0.75rem; /* Adjust description text size */
+    font-size: 0.75rem; 
   }
 
   .blobDate {
-    font-size: 0.7rem; /* Adjust date text size */
+    font-size: 0.7rem; 
   }
 }
