@@ -61,6 +61,14 @@
         ├── reportWebVitals.js
         └── setupTests.js
 ```
+
+## Deployed Application
+
+The live application is available at:  
+[**Gym-Fluencer**](https://gym-fluencer-jhq4.onrender.com/)
+
+Explore the platform and access its features, including trainer profiles, gym gear shopping, and more!
+
 ## Contributing
 
 Feel free to fork this repository and submit pull requests if you'd like to contribute. Here are some ways you can help:
