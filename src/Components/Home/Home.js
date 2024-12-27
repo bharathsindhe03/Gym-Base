@@ -54,7 +54,7 @@ export default function Home() {
 
           
           <div className="serviceImageWrapper">
-            <img src={sec1} alt="section1-img" className="sec1Image" />
+            <img src={sec1} alt="section1-img" className="sec1Image" loading="lazy"/>
           </div>
 
           

@@ -68,7 +68,7 @@ export default function Blob() {
           <div className={styles.blobList}>
             {blobs.map((blob) => (
               <div className={styles.blobItem} key={blob.id}>
-                <img src={blob.src} alt={blob.title} className={styles.blobImage} />
+                <img src={blob.src} alt={blob.title} className={styles.blobImage} loading="lazy"/>
                 <div className={styles.blobDetails}>
                   <h3>{blob.title}</h3>
                   <p>{blob.description}</p>

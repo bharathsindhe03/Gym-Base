@@ -26,24 +26,23 @@ export default function Classes() {
 
   return (
     <>
-        <div className={styles.classesContainer}>
+      <div className={styles.classesContainer}>
         <h1 className={styles.title}>Our Classes</h1>
         <div className={styles.classesWrapper}>
-            {categories.map((category) => (
+          {categories.map((category) => (
             <div key={category.id} className={styles.classCard}>
-                <img
+              <img
                 src={category.src}
                 alt={`Class ${category.id}`}
                 className={styles.classImage}
-                />
-                <p className={styles.classDesc}>{category.desc}</p>
+                loading="lazy"
+              />
+              <p className={styles.classDesc}>{category.desc}</p>
             </div>
-            ))}
+          ))}
         </div>
-        
-        </div>
-        <Footer />
+      </div>
+      <Footer />
     </>
-    
   );
 }

@@ -51,19 +51,16 @@ export default function Shop() {
     },
   ];
 
-  const [filterType, setFilterType] = useState("All"); 
+  const [filterType, setFilterType] = useState("All");
   const [maxPrice, setMaxPrice] = useState(5000);
-
 
   const handleFilterTypeChange = (type) => {
     setFilterType(type);
   };
 
-
   const handlePriceChange = (event) => {
     setMaxPrice(event.target.value);
   };
-
 
   const filteredCategories = categories.filter(
     (item) =>
@@ -76,10 +73,9 @@ export default function Shop() {
       <div className={styles.shopContainer}>
         <h1 className={styles.title}>Shop Our Collection</h1>
         <div className={styles.shopLayout}>
-         
           <div className={styles.filterSection}>
             <h2 className={styles.filterTitle}>Filters</h2>
-            
+
             <div className={styles.filterGroup}>
               <h3>Category</h3>
               <button
@@ -108,7 +104,6 @@ export default function Shop() {
               </button>
             </div>
 
-        
             <div className={styles.filterGroup}>
               <h3>Price</h3>
               <label htmlFor="priceRange">Max Price: ₹{maxPrice}</label>
@@ -125,11 +120,15 @@ export default function Shop() {
             </div>
           </div>
 
-          
           <div className={styles.shopWrapper}>
             {filteredCategories.map((item) => (
               <div key={item.id} className={styles.shopCard}>
-                <img src={item.src} alt={item.title} className={styles.shopImage} />
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  className={styles.shopImage}
+                  loading="lazy"
+                />
                 <h3 className={styles.shopTitle}>{item.title}</h3>
                 <p className={styles.shopDescription}>{item.description}</p>
                 <p className={styles.shopPrice}>Price: ₹{item.price}</p>

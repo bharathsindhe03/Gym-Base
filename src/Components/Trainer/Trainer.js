@@ -4,7 +4,7 @@ import p1 from "../../assets/p1.png";
 import p2 from "../../assets/p2.png";
 import p3 from "../../assets/p3.png";
 import p4 from "../../assets/p4.png";
-import styles from "./Trainer.module.css"; 
+import styles from "./Trainer.module.css";
 
 export default function Trainer() {
   const trainers = [
@@ -40,12 +40,15 @@ export default function Trainer() {
         <h1 className={styles.title}>Your Best Partner</h1>
         <h2 className={styles.subtitle}>Meet Our Team</h2>
         <p className={styles.description}>
-          We are a team of experienced people, passionate about nutrition, sports, and fitness, with talent and knowledge unsurpassed in the industry. Get to know us.
+          We are a team of experienced people, passionate about nutrition,
+          sports, and fitness, with talent and knowledge unsurpassed in the
+          industry. Get to know us.
         </p>
         <div className={styles.trainerWrapper}>
           {trainers.map((trainer) => (
             <div key={trainer.id} className={styles.trainerCard}>
               <img
+                loading="lazy"
                 src={trainer.src}
                 alt={trainer.name}
                 className={styles.trainerImage}
