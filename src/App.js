@@ -1,19 +1,19 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
-
+import Animation from "./Components/Animation/Animation"
 // Lazy-loaded components
-const Home = lazy(() => import("./Components/Home/Home"));
-const Classes = lazy(() => import("./Components/Classes/Classes"));
-const Trainer = lazy(() => import("./Components/Trainer/Trainer"));
-const Shop = lazy(() => import("./Components/Shop/Shop"));
-const Blob = lazy(() => import("./Components/Blob/Blob"));
+const Home = lazy(() => import("./Page/Home/Home"));
+const Classes = lazy(() => import("./Page/Classes/Classes"));
+const Trainer = lazy(() => import("./Page/Trainer/Trainer"));
+const Shop = lazy(() => import("./Page/Shop/Shop"));
+const Blob = lazy(() => import("./Page/Blob/Blob"));
 
 function App() {
   return (
     <Router>
       <Navbar /> {/* Fixed Navbar */}
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Animation/>}>
         <Routes>
           <Route path="/" element={<Home />} /> {/* Default Route */}
           <Route path="/classes" element={<Classes />} />

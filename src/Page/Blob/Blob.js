@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import b1 from "../../assets/b1.png";
 import b2 from "../../assets/b2.png";
 import b3 from "../../assets/b3.png";
@@ -30,7 +30,8 @@ export default function Blob() {
       id: 3,
       src: b3,
       title: "Urban Blob",
-      description: "Perfect for the city life, this blob offers unmatched comfort.",
+      description:
+        "Perfect for the city life, this blob offers unmatched comfort.",
       category: "Urban",
       date: "2024-02-15",
     },
@@ -38,7 +39,8 @@ export default function Blob() {
       id: 4,
       src: b4,
       title: "Nature Blob",
-      description: "Inspired by nature, this blob brings peace and tranquility.",
+      description:
+        "Inspired by nature, this blob brings peace and tranquility.",
       category: "Nature",
       date: "2024-03-01",
     },
@@ -68,7 +70,12 @@ export default function Blob() {
           <div className={styles.blobList}>
             {blobs.map((blob) => (
               <div className={styles.blobItem} key={blob.id}>
-                <img src={blob.src} alt={blob.title} className={styles.blobImage} loading="lazy"/>
+                <img
+                  src={blob.src}
+                  alt={blob.title}
+                  className={styles.blobImage}
+                  loading="lazy"
+                />
                 <div className={styles.blobDetails}>
                   <h3>{blob.title}</h3>
                   <p>{blob.description}</p>

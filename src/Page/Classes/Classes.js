@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import athlete from "../../assets/ATHLETE.png";
 import bodypump from "../../assets/BODY PUMP.png";
 import crossfit from "../../assets/CROSSFIT.png";

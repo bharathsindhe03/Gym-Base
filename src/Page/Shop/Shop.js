@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import s1 from "../../assets/s1.png";
 import s2 from "../../assets/s2.png";
 import s3 from "../../assets/s3.png";

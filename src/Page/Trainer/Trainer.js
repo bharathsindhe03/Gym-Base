@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import p1 from "../../assets/p1.png";
 import p2 from "../../assets/p2.png";
 import p3 from "../../assets/p3.png";
