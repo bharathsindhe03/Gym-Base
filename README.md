@@ -65,7 +65,7 @@
 ## Deployed Application
 
 The live application is available at:  
-[**Gym-Fluencer**](https://gym-fluencer-jhq4.onrender.com/)
+[**Gym-Fluencer**](https://gym-base.vercel.app/)
 
 Explore the platform and access its features, including trainer profiles, gym gear shopping, and more!
 
