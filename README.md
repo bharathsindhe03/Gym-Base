@@ -1,4 +1,4 @@
-# Gym-Fluencer
+# Gym-Base
 
 **Gym-Fluencer** is a responsive fitness platform that provides users with access to various gym-related resources, including trainer profiles, shopping for gym gear, and exploring new fitness experiences. The website is built with React and CSS modules, ensuring a modular, maintainable, and responsive design for an enhanced user experience.
 
@@ -65,7 +65,7 @@
 ## Deployed Application
 
 The live application is available at:  
-[**Gym-Fluencer**](https://gym-base.vercel.app/)
+[**Gym-Base**](https://gym-base.vercel.app/)
 
 Explore the platform and access its features, including trainer profiles, gym gear shopping, and more!
 
