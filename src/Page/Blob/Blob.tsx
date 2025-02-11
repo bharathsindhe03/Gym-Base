@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../../Components/Footer/Footer";
 import b1 from "../../assets/b1.png";
 import b2 from "../../assets/b2.png";
@@ -6,7 +5,6 @@ import b3 from "../../assets/b3.png";
 import b4 from "../../assets/b4.png";
 import b5 from "../../assets/b5.png";
 import b6 from "../../assets/b6.png";
-import styles from "./Blob.module.css";
 
 export default function Blob() {
   const blobs = [
@@ -64,29 +62,37 @@ export default function Blob() {
 
   return (
     <>
-      <div className={styles.blobContainer}>
-        <div className={styles.blobItems}>
-          <h2>Our Latest Blobs</h2>
-          <div className={styles.blobList}>
+      <div className="flex flex-col items-center px-5 py-10">
+        <div className="w-full max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-6">
+            Our Latest Blobs
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {blobs.map((blob) => (
-              <div className={styles.blobItem} key={blob.id}>
+              <div
+                key={blob.id}
+                className="bg-white border rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+              >
                 <img
                   src={blob.src}
                   alt={blob.title}
-                  className={styles.blobImage}
+                  className="w-full h-48 object-cover transition-opacity duration-300 hover:opacity-80"
                   loading="lazy"
                 />
-                <div className={styles.blobDetails}>
-                  <h3>{blob.title}</h3>
-                  <p>{blob.description}</p>
-                  <p className={styles.blobDate}>Date Added: {blob.date}</p>
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {blob.title}
+                  </h3>
+                  <p className="text-gray-600 mt-2">{blob.description}</p>
+                  <p className="text-gray-400 text-sm mt-3">
+                    Date Added: {blob.date}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );

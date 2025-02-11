@@ -28,39 +28,41 @@
 
 2. Navigate to the project directory:
 
-    ```bash
+   ```bash
    cd Gym-Fluencer
    ```
+
 3. Install the dependencies:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
+
 4. Start the development server:
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
+
 ## Folder Structure
 
-```sh
 └── Gym-Fluencer/
     ├── README.md
-    ├── package-lock.json
+    ├── index.html  
     ├── package.json
-    ├── public
-    └── src
+    ├── package-lock.json
+    ├── vite.config.js  
+    ├── public/
+    └── src/
         ├── App.css
-        ├── App.js
-        ├── App.test.js
-        ├── Components
-        ├── assets
+        ├── App.tsx  
+        ├── Components/
+        ├── Pages/
+        ├── assets/
         ├── index.css
-        ├── index.js
+        ├── main.tsx  
         ├── logo.svg
-        ├── reportWebVitals.js
-        └── setupTests.js
-```
+
 
 ## Deployed Application
 
@@ -76,4 +78,3 @@ Feel free to fork this repository and submit pull requests if you'd like to cont
 - Fix bugs or improve features
 - Improve documentation
 - Add more styles or animations
-
