@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import logo from "../../assets/logo.png";
 
 export default function Navbar() {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
     { path: "/", label: "Home" },
@@ -24,8 +27,8 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Navigation Links */}
-        <div className="flex gap-6">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex gap-6">
           {links.map((link) => (
             <Link
               key={link.path}
@@ -35,6 +38,38 @@ export default function Navbar() {
                   ? "bg-blue-600 font-bold"
                   : "hover:bg-blue-600"
               }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white p-2 focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden bg-black transition-all duration-300 ${
+          menuOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
+        }`}
+      >
+        <div className="flex flex-col items-center gap-4 py-4">
+          {links.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`text-white text-lg px-4 py-2 w-full text-center ${
+                location.pathname === link.path
+                  ? "bg-blue-600 font-bold"
+                  : "hover:bg-blue-600"
+              }`}
+              onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </Link>
