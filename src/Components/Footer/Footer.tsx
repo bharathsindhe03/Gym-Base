@@ -34,6 +34,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-400"
+                title="Facebook"
               >
                 <FaFacebook />
               </a>
@@ -42,6 +43,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-400"
+                title="Instagram"
               >
                 <FaInstagram />
               </a>
@@ -50,6 +52,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-400"
+                title="Twitter"
               >
                 <FaTwitter />
               </a>
